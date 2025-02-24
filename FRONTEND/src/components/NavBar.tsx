@@ -11,17 +11,18 @@ import userSvg from "../assets/img/index/user.svg";
 import { SocialMedia } from "../assets/config/config.json";
 // Styles
 import "../styles/navBar.css";
+
 function NavBar() {
   return (
     <section id="navBar">
       <article className="navIcons">
-        <a href={SocialMedia.whatsapp} target="_blank">
+        <a href={SocialMedia.whatsapp} target="_blank" className="anchorIcon">
           <img src={whatsappSvg} alt="WhatsApp" className="svg" />
         </a>
-        <a href={SocialMedia.facebook} target="_blank">
+        <a href={SocialMedia.facebook} target="_blank" className="anchorIcon">
           <img src={facebookSvg} alt="Facebook" className="svg" />
         </a>
-        <a href={SocialMedia.instagram} target="_blank">
+        <a href={SocialMedia.instagram} target="_blank" className="anchorIcon">
           <img src={instagramSvg} alt="Instagram" className="svg" />
         </a>
       </article>
@@ -29,7 +30,7 @@ function NavBar() {
         <img src={glassStoreLogo} alt="GlassStoreLogo" />
       </figure>
       <article className="navIcons">
-        <a id="searchAnchor" href="#">
+        <a className="anchorIcon" href="#">
           <img src={searchSvg} alt="Buscar Productos" className="svgOptions" />
         </a>
         <img src={favoritesSvg} alt="Favoritos" className="svgOptions" />
